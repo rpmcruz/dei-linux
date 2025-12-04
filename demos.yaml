@@ -1,0 +1,106 @@
+- course: FPRO
+  year: 2021/2022
+  title: AirLock
+  student: Luís Manuel Ribeiro de Sousa
+  link: https://github.com/2002luis/Projeto_FPRO21
+  compile: mv consolas.TTF consolas.ttf
+  run: python3 airlockMain.py
+- course: FPRO
+  year: 2021/2022
+  title: LadyBug
+  student: Eduardo Machado Teixeira de Sousa
+  link: https://github.com/up202103342/projeto
+  run: python3 projeto.py
+- course: FPRO
+  year: 2021/2022
+  title: Laserwave
+  student: Marco André Pereira da Costa
+  link: https://github.com/SpardaMarco/Projeto-FP-Laserwave
+  run: python3 main.py
+- course: FPRO
+  year: 2021/2022
+  title: Pipes
+  student: Henrique Filipe Pereira da Silva Caridade
+  link: https://github.com/HenriqueCaridade/pipes-pygame
+  run: python3 pipes-pygame.py
+- course: FPRO
+  year: 2021/2022
+  title: Thin Ice
+  student: Maria Rita Nogueira Lopes
+  link: https://github.com/MRita443/Thin-Ice
+  run: python3 'Thin Ice.py'
+- course: FPRO
+  year: 2020/2021
+  title: Jump King
+  student: Marcelo Guarniero Apolinário
+  link: https://github.com/Maruselo/Pygame-Project
+  run: python3 rowanquest.py
+- course: FPRO
+  year: 2020/2021
+  title: Archon
+  student: André Ismael Ferraz Ávila
+  link: https://github.com/AvilaAndre/projetofpro
+  compile: sed -i 's#\\#/#g' game.py
+  run: python3 game.py
+- course: FPRO
+  year: 2020/2021
+  title: Cave FRVR
+  student: Martim Afonso Rodrigues dos Santos Castro Videira
+  link: https://github.com/MartimVideira/FPRO-CaveFr
+  run: cd projeto_fpro ; python3 cavebugado.py
+- course: FPRO
+  year: 2020/2021
+  title: Knight Squad
+  student: Vasco Rafael Maia Ribeiro Guedes
+  link: https://github.com/vascoguedes/jogovasco
+  run: python3 codigo.py
+- course: FPRO
+  year: 2020/2021
+  title: Klondike
+  student: João António Semedo Pereira
+  link: https://github.com/ttoino/feup-fpro-solitaire
+  run: python3 src/main.py
+- course: FPRO
+  year: 2020/2021
+  title: Skiing
+  student: André Costa Lima
+  link: https://github.com/limwa/skiing
+  run: python3 src/skiing.py
+- course: FPRO
+  year: 2019/2020
+  title: Flash Gordon
+  student: Francisco Gonçalves Cerqueira
+  link: https://github.com/xico2001pt/flashgordon-atari
+  run: python3 flashgordon-atari.py
+- course: FPRO
+  year: 2019/2020
+  title: Donkey Kong
+  student: José Pedro Peixoto Ferreira
+  link: https://github.com/josepedropf/DonkeyKong
+  run: python3 donkeykong+.py
+- course: FPRO
+  year: 2019/2020
+  title: Bomberman
+  student: Pedro Gonçalo de Castro Correia
+  link: https://github.com/Goncalerta/FEUP.MIEIC.FPRO.bomberman
+  run: python3 bomberman.py
+- course: FPRO
+  year: 2019/2020
+  title: Pang
+  student: David Teixeira Preda
+  link: https://github.com/DTPreda/Pang
+  run: python3 PANG.py
+- course: FPRO
+  year: 2019/2020
+  title: Dr. Mario
+  student: Eunice Juliana Freitas Amorim
+  link: https://github.com/eunicejamorim/dr-mario
+  run: python3 projeto.py
+
+- course: LDTS
+  year: 2023/2024
+  title: Timeless Odyssey
+  student: Bruno Oliveira, Joao Mendes, Rodrigo Coelho
+  link: https://github.com/Process-ing/feup-ldts
+  compile: ./gradlew build
+  run: ./gradlew run
