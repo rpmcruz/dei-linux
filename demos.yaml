@@ -3,7 +3,6 @@
   title: AirLock
   student: Luís Manuel Ribeiro de Sousa
   link: https://github.com/2002luis/Projeto_FPRO21
-  compile: mv consolas.TTF consolas.ttf
   run: python3 airlockMain.py
 - course: FPRO
   year: 2021/2022
@@ -99,7 +98,7 @@
 
 - course: LDTS
   year: 2023/2024
-  title: Timeless Odyssey
+  title: Timeless-Odyssey
   student: Bruno Oliveira, Joao Mendes, Rodrigo Coelho
   link: https://github.com/Process-ing/feup-ldts
   compile: ./gradlew build
