@@ -11,7 +11,7 @@ if os.path.exists('desktop'): shutil.rmtree('desktop')
 for demo in yaml.safe_load(open('demos.yaml')):
     github = re.sub(r'^https://github\.com/(.+)$', r'git@github.com:\1.git', demo['link'])
     path = f'demos/{demo["course"]}/{demo["title"]}'
-    os.system(f'git clone {github} "{path}"')
+    os.system(f'git clone --depth 1 --single-branch --no-tags {github} "{path}"')
     if 'compile' in demo:
         with chdir(path):
             os.system(demo['compile'])
