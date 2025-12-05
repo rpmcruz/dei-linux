@@ -25,19 +25,15 @@ users.users.demos.isNormalUser = true;
 nixpkgs.config.pulseaudio = true;
 
 environment.systemPackages = with pkgs; [
+  python313
   python313Packages.pygame
   jre
 ];
 
-isoImage.contents = [
-  {
-    source = ./demos;
-    target = "/demos";
-  }
-  {
-    source = ./desktop;
-    target = "/home/demo/Desktop";
-  }
-];
-
+system.activationScripts.populateDemo = ''
+  cp -r ${./demos} /demos
+  cp -r ${./desktop} '/home/demos/Área de Trabalho'
+  chown -R demos:users /demos '/home/demos/Área de Trabalho'
+  cp ${./xfce4-desktop.xml} /home/demos/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-desktop.xml
+'';
 }

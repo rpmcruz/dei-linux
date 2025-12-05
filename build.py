@@ -20,7 +20,7 @@ for demo in yaml.safe_load(open('demos.yaml')):
     with open(filename, 'w') as f:
         print('[Desktop Entry]', file=f)
         print(f'Name={demo["title"]}', file=f)
-        print(f'Path=/demo/{demo["course"]}/{demo["title"]}', file=f)
+        print(f'Path=/demos/{demo["course"]}/{demo["title"]}', file=f)
         print(f'Exec={demo["run"]}', file=f)
         print('Type=Application', file=f)
     os.chmod(filename, os.stat(filename).st_mode | stat.S_IXUSR | stat.S_IXGRP | stat.S_IXOTH)
