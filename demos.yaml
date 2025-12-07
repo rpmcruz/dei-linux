@@ -55,6 +55,12 @@
   run: python3 codigo.py
 - course: FPRO
   year: 2020/2021
+  title: Klondike
+  student: João António Semedo Pereira
+  link: https://github.com/ttoino/feup-fpro-solitaire
+  run: python3 src/main.py
+- course: FPRO
+  year: 2020/2021
   title: Skiing
   student: André Costa Lima
   link: https://github.com/limwa/skiing
