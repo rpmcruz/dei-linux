@@ -55,15 +55,10 @@
   run: python3 codigo.py
 - course: FPRO
   year: 2020/2021
-  title: Klondike
-  student: João António Semedo Pereira
-  link: https://github.com/ttoino/feup-fpro-solitaire
-  run: python3 src/main.py
-- course: FPRO
-  year: 2020/2021
   title: Skiing
   student: André Costa Lima
   link: https://github.com/limwa/skiing
+  compile: sed -i 's/y = random.randint(0, world.height)/y = random.randint(0, int(world.height))/g' src/game/landscape.py
   run: python3 src/skiing.py
 - course: FPRO
   year: 2019/2020
@@ -95,11 +90,3 @@
   student: Eunice Juliana Freitas Amorim
   link: https://github.com/eunicejamorim/dr-mario
   run: python3 projeto.py
-
-- course: LDTS
-  year: 2023/2024
-  title: Timeless-Odyssey
-  student: Bruno Oliveira, Joao Mendes, Rodrigo Coelho
-  link: https://github.com/Process-ing/feup-ldts
-  compile: ./gradlew build
-  run: ./gradlew run
