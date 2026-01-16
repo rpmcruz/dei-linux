@@ -2,7 +2,6 @@
 {
 imports = [
   <nixpkgs/nixos/modules/installer/cd-dvd/installation-cd-minimal.nix>
-  <nixpkgs/nixos/modules/installer/cd-dvd/channel.nix>
 ];
 
 time.timeZone = "Europe/Lisbon";
@@ -12,9 +11,9 @@ console.keyMap = "pt-latin1";
 
 services.xserver = {
   enable = true;
-  desktopManager = {
-    xterm.enable = false;
-    xfce.enable = true;
+  desktopManager.xfce = {
+    enable = true;
+    enableScreensaver = false;
   };
 };
 services.displayManager.defaultSession = "xfce";

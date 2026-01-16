@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
-# requires: nix-shell -p jdk python313Packages.pyyaml
+print('you may need to run:')
+print('nix-shell -p jdk python313Packages.pyyaml')
 
 import yaml, re, os, stat, shutil
 from contextlib import chdir
@@ -31,3 +32,10 @@ ok = os.system("nix-build '<nixpkgs/nixos>' -A config.system.build.isoImage -I n
 print("test...")
 if ok == 0:
     os.system('qemu-system-x86_64 -enable-kvm -m 4096 -cpu host -smp 2 -boot d -cdrom ./result/iso/nixos-*.iso -device virtio-vga')
+
+print()
+print('to burn to a pen:')
+print('- identify the pen: lsblk')
+print('- sudo dd if=`echo result/iso/nixos-*.iso` of=/dev/sda1 bs=4M status=progress oflag=sync')
+print('- sync')
+print('note: SecureBoot must be disabled in the computer')
